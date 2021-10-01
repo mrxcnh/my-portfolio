@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -14,67 +15,440 @@
 
     <title>Portfolio</title>
 </head>
+
 <body>
-    <main class="main">
+    <header class="header" id="header">
+        <nav class="nav container">
+            <a href="#" class="nav__logo">thanhdv</a>
 
-        <header class="header" id="header">
-            <nav class="nav container">
-                <a href="#" class="nav__logo">thanhdv</a>
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list grid">
+                    <li class="nav__item">
+                        <a href="#home" class="nav__link">
+                            <i class="uil uil-home nav__icon"></i> Home
+                        </a>
+                    </li>
 
-                <div class="nav__menu" id="nav-menu">
-                    <ul class="nav__list grid">
-                        <li class="nav__item">
-                            <a href="#home" class="nav__link">
-                                <i class="uil uil-home nav__icon"></i> Home
-                            </a>
-                        </li>
+                    <li class="nav__item">
+                        <a href="#about" class="nav__link">
+                            <i class="uil uil-user nav__icon"></i> About
+                        </a>
+                    </li>
 
-                        <li class="nav__item">
-                            <a href="#about" class="nav__link">
-                                <i class="uil uil-user nav__icon"></i> About
-                            </a>
-                        </li>
+                    <li class="nav__item">
+                        <a href="#skills" class="nav__link">
+                            <i class="uil uil-file-alt nav__icon"></i> Skills
+                        </a>
+                    </li>
 
-                        <li class="nav__item">
-                            <a href="#skills" class="nav__link">
-                                <i class="uil uil-file-alt nav__icon"></i> Skills
-                            </a>
-                        </li>
+                    <li class="nav__item">
+                        <a href="#timeline" class="nav__link">
+                            <i class="uil uil-clock nav__icon"></i> Timeline
+                        </a>
+                    </li>
 
-                        <li class="nav__item">
-                            <a href="#services" class="nav__link">
-                                <i class="uil uil-briefcase-alt nav__icon"></i> Services
-                            </a>
-                        </li>
+                    <!-- <li class="nav__item">
+                        <a href="#portfolio" class="nav__link">
+                            <i class="uil uil-scenery nav__icon"></i> Portfolio
+                        </a>
+                    </li>
 
-                        <li class="nav__item">
-                            <a href="#portfolio" class="nav__link">
-                                <i class="uil uil-scenery nav__icon"></i> Portfolio
-                            </a>
-                        </li>
+                    <li class="nav__item">
+                        <a href="#contact" class="nav__link">
+                            <i class="uil uil-message nav__icon"></i> Contact me
+                        </a>
+                    </li> -->
+                </ul>
 
-                        <li class="nav__item">
-                            <a href="#contact" class="nav__link">
-                                <i class="uil uil-message nav__icon"></i> Contact me
-                            </a>
-                        </li>
-                    </ul>
+                <i class="uil uil-times nav__close nav__icon" id="nav-close"></i>
+            </div>
 
-                    <i class="uil uil-times nav__close nav__icon" id="nav-close"></i>
+            <div class="nav__btns">
+                <div class="nav__toggle" id="nav-toggle">
+                    <i class="uil uil-apps nav__icon"></i>
                 </div>
+            </div>
+        </nav>
+    </header>
 
-                <div class="nav__btns">
-                    <div class="nav__toggle" id="nav-toggle">
-                        <i class="uil uil-apps nav__icon"></i>
+    <main class="main">
+        <section class="home section" id="home">
+            <div class="home__container container grid">
+                <div class="home__content grid">
+                    <div class="home__social">
+                        <a href="https://www.facebook.com/thanhdv11" target="_blank" class="home__social-icon">
+                            <i class="uil uil-facebook"></i>
+                        </a>
+                        <a href="https://mail.google.com/" target="_blank" class="home__social-icon">
+                            <i class="uil uil-envelope-alt"></i>
+                        </a>
+                        <a href="https://github.com/" target="_blank" class="home__social-icon">
+                            <i class="uil uil-github-alt"></i>
+                        </a>
+
+                    </div>
+
+                    <div class="home__img">
+                        <svg class="home__blob" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+                            <path fill="#0F62FE"
+                                d="M54.5,-57.8C65,-43.9,64.2,-21.9,63.4,-0.8C62.5,20.3,61.7,40.5,51.1,53.4C40.5,66.3,20.3,71.7,1.7,70.1C-16.9,68.4,-33.9,59.6,-48.8,46.8C-63.6,33.9,-76.4,16.9,-76.9,-0.5C-77.4,-18,-65.7,-36,-50.8,-49.9C-36,-63.9,-18,-73.8,2,-75.8C21.9,-77.7,43.9,-71.8,54.5,-57.8Z"
+                                transform="translate(100 100)" />
+                            <image class="home__blob-img" x='12' y='18' xlink:href="assets/img/prof1.png"></image>
+                        </svg>
+
+                    </div>
+
+                    <div class="home__data">
+                        <h1 class="home__title">Hi, I'm thanhdv</h1>
+                        <h3 class="home__subtitle">Backend developer</h3>
+                        <p class="home__description">High level experience in web design and development knowledge,
+                            producing quality work. </p>
+
+                        <a href="tel:+84394564208" class="button button--flex">
+                            Contact Me <i class="uil uil-message button__icon"></i>
+                        </a>
                     </div>
                 </div>
-            </nav>
-        </header>
+
+                <div class="home__scroll">
+                    <a href="#about" class="home__scroll-button button--flex">
+                        <i class="uil uil-mouse-alt home__scroll-mouse"></i>
+                        <span class="home__scroll-name">Scroll down</span>
+                        <i class="uil uil-arrow-down home__scroll-arrow"></i>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <section class="about section" id="about">
+            <h2 class="section__title">About me</h2>
+            <span class="section__subtitle">My introduction</span>
+
+            <div class="about__container container grid">
+                <img src="assets/img/prof1.png" alt="" class="about__img">
+                <div class="about__data">
+                    <p class="about__description">
+                        Web developer, with extensive knowledge and years of experience, working in web technologies and
+                        Ui / Ux design, delivering quality work.
+                    </p>
+                    <div class="about__info">
+                        <div>
+                            <a href="#timeline" class="qualification__link">
+                                <span class="about__info-title">02+</span>
+                                <span class="about__info-name">Years <br> experience</span>
+                            </a>
+                        </div>
+
+                        <div>
+                            <a href="#timeline" class="qualification__link">
+                                <span class="about__info-title">05+</span>
+                                <span class="about__info-name">Completed <br> project</span>
+                            </a>
+                        </div>
+
+                        <div>
+                            <a href="#timeline" class="qualification__link">
+                            <span class="about__info-title">03+</span>
+                            <span class="about__info-name">Companies <br> worked</span>
+                        </a>
+
+                        </div>
+                    </div>
+                    <div class="about__buttons">
+                        <a download="" target="_blank" href="assets/pdf/vinahost.pdf" class="button button--flex">
+                            Download CV <i class="uil uil-download-alt button__icon"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="skills section" id="skills">
+            <h2 class="section__title">Skills</h2>
+            <span class="section__subtitle">My technical level</span>
+
+            <div class="skills__container container grid">
+                <div>
+                    <!-- ================== SKILL 2 =========================== -->
+                    <div class="skills__content skills__open">
+                        <div class="skills__header">
+                            <i class="uil uil-server-network skills__icon"></i>
+                            <div>
+                                <h1 class="skills__title">Backend developer</h1>
+                                <span class="skills__subtitle">More than 2 years</span>
+                            </div>
+                            <i class="uil uil-angle-down skills__arrow"></i>
+                        </div>
+
+                        <div class="skills__list grid">
+                            <div class="skills__data">
+                                <div class="skills__titles">
+                                    <h3 class="skills__name">Python</h3>
+                                    <span class="skills__number">90%</span>
+                                </div>
+                                <div class="skills__bar">
+                                    <span class="skills__percentage skills__python">
+
+                                    </span>
+                                </div>
+                            </div>
+
+                            <div class="skills__data">
+                                <div class="skills__titles">
+                                    <h3 class="skills__name">Django / Flask</h3>
+                                    <span class="skills__number">80%</span>
+                                </div>
+                                <div class="skills__bar">
+                                    <span class="skills__percentage skills__django">
+
+                                    </span>
+                                </div>
+                            </div>
+
+                            <div class="skills__data">
+                                <div class="skills__titles">
+                                    <h3 class="skills__name">Postgresql</h3>
+                                    <span class="skills__number">80%</span>
+                                </div>
+                                <div class="skills__bar">
+                                    <span class="skills__percentage skills__postgres">
+
+                                    </span>
+                                </div>
+                            </div>
+
+                            <div class="skills__data">
+                                <div class="skills__titles">
+                                    <h3 class="skills__name">Docker</h3>
+                                    <span class="skills__number">50%</span>
+                                </div>
+                                <div class="skills__bar">
+                                    <span class="skills__percentage skills__docker">
+
+                                    </span>
+                                </div>
+                            </div>
 
 
+                            <div class="skills__data">
+                                <div class="skills__titles">
+                                    <h3 class="skills__name">AWS</h3>
+                                    <span class="skills__number">60%</span>
+                                </div>
+                                <div class="skills__bar">
+                                    <span class="skills__percentage skills__aws">
+
+                                    </span>
+                                </div>
+                            </div>
+
+
+                            <div class="skills__data">
+                                <div class="skills__titles">
+                                    <h3 class="skills__name">Twilio</h3>
+                                    <span class="skills__number">60%</span>
+                                </div>
+                                <div class="skills__bar">
+                                    <span class="skills__percentage skills__twilio">
+
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- ================== SKILL 1 =========================== -->
+                    <div class="skills__content skills__close">
+
+                        <div class="skills__header">
+                            <i class="uil uil-brackets-curly skills__icon"></i>
+                            <div>
+                                <h1 class="skills__title">Frontend developer</h1>
+                                <span class="skills__subtitle">More than 6 months</span>
+                            </div>
+                            <i class="uil uil-angle-down skills__arrow"></i>
+                        </div>
+
+                        <div class="skills__list grid">
+                            <div class="skills__data">
+                                <div class="skills__titles">
+                                    <h3 class="skills__name">HTML</h3>
+                                    <span class="skills__number">90%</span>
+                                </div>
+                                <div class="skills__bar">
+                                    <span class="skills__percentage skills__html">
+
+                                    </span>
+                                </div>
+                            </div>
+
+                            <div class="skills__data">
+                                <div class="skills__titles">
+                                    <h3 class="skills__name">CSS</h3>
+                                    <span class="skills__number">80%</span>
+                                </div>
+                                <div class="skills__bar">
+                                    <span class="skills__percentage skills__css">
+
+                                    </span>
+                                </div>
+                            </div>
+
+                            <div class="skills__data">
+                                <div class="skills__titles">
+                                    <h3 class="skills__name">Javascript</h3>
+                                    <span class="skills__number">60%</span>
+                                </div>
+                                <div class="skills__bar">
+                                    <span class="skills__percentage skills__js">
+
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <!-- ================== SKILL 3 =========================== -->
+                    <div class="skills__content skills__close">
+                        <div class="skills__header">
+                            <i class="uil uil-swatchbook skills__icon"></i>
+                            <div>
+                                <h1 class="skills__title">Design</h1>
+                                <span class="skills__subtitle">More than 1 years</span>
+                            </div>
+                            <i class="uil uil-angle-down skills__arrow"></i>
+                        </div>
+
+                        <div class="skills__list grid">
+                            <div class="skills__data">
+                                <div class="skills__titles">
+                                    <h3 class="skills__name">Figma</h3>
+                                    <span class="skills__number">90%</span>
+                                </div>
+                                <div class="skills__bar">
+                                    <span class="skills__percentage skills__figma">
+
+                                    </span>
+                                </div>
+                            </div>
+
+                            <div class="skills__data">
+                                <div class="skills__titles">
+                                    <h3 class="skills__name">Sketch</h3>
+                                    <span class="skills__number">85%</span>
+                                </div>
+                                <div class="skills__bar">
+                                    <span class="skills__percentage skills__sketch">
+
+                                    </span>
+                                </div>
+                            </div>
+
+                            <div class="skills__data">
+                                <div class="skills__titles">
+                                    <h3 class="skills__name">Photoshop / GIMP</h3>
+                                    <span class="skills__number">85%</span>
+                                </div>
+                                <div class="skills__bar">
+                                    <span class="skills__percentage skills__photoshop">
+
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="qualification section" id="timeline">
+            <h2 class="section__title">Timeline</h2>
+            <span class="section__subtitle">My personal journey</span>
+
+            <div class="qualification__sections">
+                <div class="qualification__content">
+                    <div class="qualification__data">
+                        <div>
+                            <div class="qualification__calendar">
+                                <i class="uil uil-calendar-alt"></i>
+                                2014 - 2020
+                            </div>
+                            <h3 class="qualification__title">Software Engineering</h3>
+                            <span class="qualification__subtitle">HUST</span>
+                        </div>
+
+                        <div>
+                            <span class="qualification__rounder"></span>
+                            <span class="qualification__line"></span>
+                        </div>
+                    </div>
+
+                    <div class="qualification__data">
+                        <div></div>
+                        <div>
+                            <span class="qualification__rounder"></span>
+                            <span class="qualification__line"></span>
+                        </div>
+
+                        <div>
+                            <div class="qualification__calendar">
+                                <i class="uil uil-calendar-alt"></i>
+                                2018 - 2020
+                            </div>
+                            <h3 class="qualification__title">Backend developer</h3>
+                            <p class="qualification__subtitle">Tam Dong Tam JSC</p>
+                            <p class="qualification__subtitle"><a class="qualification__link"
+                                    href="https://www.park-direct.jp/"  target="_blank">Park-Direct</a>
+                            </p>
+                            <p class="qualification__subtitle"><a class="qualification__link"
+                                    href="https://afxstg-front.ecomedic.vn/"  target="_blank">Afx Forex</a></p>
+
+                        </div>
+
+                    </div>
+
+                    <div class="qualification__data">
+                        <div>
+                            <div class="qualification__calendar">
+                                <i class="uil uil-calendar-alt"></i>
+                                2020 - today
+                            </div>
+                            <h3 class="qualification__title">Backend developer + Devops</h3>
+                            <span class="qualification__subtitle">AKADON APPLICATION TECHNOLOGY CO. LTD</span>
+                            <span class="qualification__subtitle"><a class="qualification__link"
+                                    href="https://akadon.edu.vn/" target="_blank">Akadon</a></span>
+                        </div>
+
+                        <div>
+                            <span class="qualification__rounder"></span>
+                            <span class="qualification__line"></span>
+                        </div>
+                    </div>
+
+                    <div class="qualification__data">
+                        <div></div>
+                        <div>
+                            <span class="qualification__rounder"></span>
+                            <span class="qualification__line"></span>
+                        </div>
+                        <div>
+                            <div class="qualification__calendar">
+                                <i class="uil uil-calendar-alt"></i>
+                                2020 - today
+                            </div>
+                            <h3 class="qualification__title">Backend developer + Devops</h3>
+                            <span class="qualification__subtitle">OMINEXT LEADING MEDICAL - HEALTHCARE SYSTEM
+                                VENDOR</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
-    
+
 
     <script src="assets/js/main.js"></script>
 </body>
+
 </html>
